@@ -1,4 +1,5 @@
 from palindrome import check_palindrome
+from sortNumbers import ordened_numbers
 
 def main():
     option_selected = ""
@@ -9,7 +10,7 @@ def main():
         
         print("Select an option:")
         print("     1- Palindrome Exercise")
-        print("     2- Other")
+        print("     2- Order numbers without sort function")
         print("     0- Exit")
         print("\n")
 
@@ -21,6 +22,9 @@ def main():
 
         if option_selected == "1":
             check_palindrome()
+        
+        if option_selected == "2":
+            ordened_numbers()
         
 
 if __name__ == "__main__":
